@@ -4,7 +4,7 @@ import time
 while True:
     try:
         os.system('cls' if os.name == 'nt' else 'clear')
-        #NIM: 2009106002 + 10 = 12
+        #NIM: 2009106019 + 10 = 29
         angka = int(input("Masukkan angka: "))
         y = 1
         x = 1
