@@ -1,0 +1,113 @@
+print("         TOKO KUE SULE")
+print()
+print("================================")
+print("  Produk          Harga")
+print("---------------------------")
+print(" Kue Keju        Rp 6.000")
+print("Kue Coklat       Rp 3.500")
+print()
+print("================================")
+print("- Diskon 7% Jika Belanja 5 - 20 Kue Coklat")
+print("- Diskon 12% Jika Belanja 21 - 35 Kue Coklat")
+print("- Diskon 10% Jika Belanja 4 - 15 Kue Keju")
+print("- Diskon 15% Jika Belanja 16 - 25 Kue Keju")
+print()
+
+def kasir():
+
+    jumlahkuecoklat = int(input("Masukkan Nilai Yang Mau Dibeli Kue Coklat "))
+    print()
+    jumlahkuekeju = int(input("Masukkan Nilai Yang Mau Dibeli Kue Keju "))
+    print()
+    
+    if(jumlahkuecoklat >= 1 and jumlahkuecoklat <= 4):
+        hargakuecoklat = 3500*jumlahkuecoklat
+        diskonkuecoklat = hargakuecoklat*0/100
+        totalhargakuecoklat = hargakuecoklat-diskonkuecoklat
+        print("Total Pembelian Kue Coklat: %d" % (jumlahkuecoklat))
+        print("Total Harga Kue Coklat: Rp. %d" % (hargakuecoklat))
+        print("Potongan Diskon Kue Coklat: Rp. %d" % (diskonkuecoklat))
+        print("Total Harga Setelah Potongan Diskon Kue Coklat; Rp. %d" % (totalhargakuecoklat))
+        print("===========================================================")
+        
+    elif(jumlahkuecoklat >= 5 and jumlahkuecoklat <= 20):
+        hargakuecoklat = 3500*jumlahkuecoklat
+        diskonkuecoklat = hargakuecoklat*7/100
+        totalhargakuecoklat = hargakuecoklat-diskonkuecoklat
+        print("Total Pembelian Kue Coklat: %d" % (jumlahkuecoklat))
+        print("Total Harga Kue Coklat: Rp. %d" % (hargakuecoklat))
+        print("Potongan Diskon Kue Coklat: Rp. %d" % (diskonkuecoklat))
+        print("Total Harga Setelah Potongan Diskon Kue Coklat; Rp. %d" % (totalhargakuecoklat))
+        print("===========================================================")
+        
+    elif(jumlahkuecoklat >= 21 and jumlahkuecoklat <= 35):
+        hargakuecoklat = 3500*jumlahkuecoklat
+        diskonkuecoklat = hargakuecoklat*12/100
+        totalhargakuecoklat = hargakuecoklat-diskonkuecoklat
+        print("Total Pembelian Kue Coklat: %d" % (jumlahkuecoklat))
+        print("Total Harga Kue Coklat: Rp. %d" % (hargakuecoklat))
+        print("Potongan Diskon Kue Coklat: Rp. %d" % (diskonkuecoklat))
+        print("Total Harga Setelah Potongan Diskon Kue Coklat; Rp. %d" % (totalhargakuecoklat))
+        print("===========================================================")
+        
+    elif(jumlahkuecoklat == 0):
+        totalhargakuecoklat = 0
+        print("==========================")
+        print("|Tidak Membeli Kue Coklat|")
+        print("==========================")
+        
+    else:
+        print("Jumlah Kue Tidak Tersedia")
+        kasir()
+
+    if(jumlahkuekeju >= 1 and jumlahkuekeju <= 4):
+        hargakuekeju = 6000*jumlahkuekeju
+        diskonkuekeju = hargakuekeju*0/100
+        totalhargakuekeju = hargakuekeju-diskonkuekeju
+        print("Total Pembelian Kue keju: %d" % (jumlahkuekeju))
+        print("Total Harga Kue Keju: Rp. %d" % (hargakuekeju))
+        print("Potongan Diskon Kue Keju: Rp. %d" % (diskonkuekeju))
+        print("Total Harga Setelah Potongan Diskon Kue Keju: Rp. %d" % (totalhargakuekeju))
+        print("===========================================================")
+        
+    elif(jumlahkuekeju >= 4 and jumlahkuekeju <= 15):
+        hargakuekeju = 6000*jumlahkuekeju
+        diskonkuekeju = hargakuekeju*10/100
+        totalhargakuekeju = hargakuekeju-diskonkuekeju
+        print("Total Pembelian Kue keju: %d" % (jumlahkuekeju))
+        print("Total Harga Kue Keju: Rp. %d" % (hargakuekeju))
+        print("Potongan Diskon Kue Keju: Rp. %d" % (diskonkuekeju))
+        print("Total Harga Setelah Potongan Diskon Kue Keju: Rp. %d" % (totalhargakuekeju))
+        print("===========================================================")
+        
+    elif(jumlahkuekeju >= 16 and jumlahkuekeju <= 25):
+        hargakuekeju = 6000*jumlahkuekeju
+        diskonkuekeju = hargakuekeju*25/100
+        totalhargakuekeju = hargakuekeju-diskonkuekeju
+        print("Total Pembelian Kue Keju: %d" % (jumlahkuekeju))
+        print("Total Harga Kue Keju: Rp. %d" % (hargakuekeju))
+        print("Potongan Diskon Kue Keju: Rp. %d" % (diskonkuekeju))
+        print("Total Harga Setelah Potongan Diskon Kue Keju; Rp. %d" % (totalhargakuekeju))
+        print("===========================================================")
+        
+    elif(jumlahkuekeju == 0):
+        totalhargakuekeju = 0
+        print("==========================")
+        print("| Tidak Membeli Kue Keju |")
+        print("==========================")
+        
+    else:
+        print("Jumlah Kue Tidak Tersedia")
+        kasir()
+    totalsemuakue = totalhargakuecoklat+totalhargakuekeju
+    print("Jumlah Total Harga Semua Kue: Rp. %d" % (totalsemuakue)) 
+    bayar = float(input("Bayar: "))
+    kembalian = bayar-totalsemuakue
+    
+    if(bayar >= totalsemuakue):
+        print("Kembalian: Rp. %d" % (kembalian))
+
+    elif (bayar<= totalsemuakue):
+        print("Mohon Maaf Uang Anda Kurang")
+
+kasir()
